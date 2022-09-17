@@ -1,0 +1,11 @@
+.fs-8 {
+    font-size: 12px;
+    text-indent: 10px;
+}
+input {
+    border-radius: 30px !important;
+    text-indent: 10px;
+}
+label {
+    text-indent: 20px;;
+}
