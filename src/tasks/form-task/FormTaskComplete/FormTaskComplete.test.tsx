@@ -5,8 +5,9 @@ import { FormTaskComplete } from './FormTaskComplete';
 
 describe('FormTaskCompoenent Test', () => {
     test('Loading test', () => {
+        const saveUserForm = jest.fn();
+        render(<FormTaskComplete saveUserForm={saveUserForm} />);
 
-        render(<FormTaskComplete/>);
         const firstnameField = screen.getByLabelText(/First name/i);
         const lastnameField = screen.getByLabelText(/Last name/i);
         const birthdayField = screen.getByLabelText(/birthday/i);
